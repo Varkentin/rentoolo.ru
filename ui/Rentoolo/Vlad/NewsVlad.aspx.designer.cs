@@ -7,11 +7,11 @@
 // </автоматически создаваемое>
 //------------------------------------------------------------------------------
 
-namespace Rentoolo.Account
+namespace Rentoolo.Vlad
 {
 
 
-    public partial class Rent
+    public partial class NewsVlad
     {
     }
 }

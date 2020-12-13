@@ -10,18 +10,15 @@
 namespace Rentoolo.Model
 {
     using System;
+    using System.Collections.Generic;
     
-    public partial class spGetComplaintsBySender_Result
+    public partial class NewsVlad
     {
-        public int Id { get; set; }
-        public string Message { get; set; }
-        public int ComplaintType { get; set; }
-        public int ObjectId { get; set; }
-        public int ObjectType { get; set; }
-        public System.Guid UserSender { get; set; }
-        public System.Guid UserRecipier { get; set; }
-        public System.DateTime Data { get; set; }
-        public string UserSenderName { get; set; }
-        public string UserRecipierName { get; set; }
+        public int id { get; set; }
+        public string Text { get; set; }
+        public System.DateTime Date { get; set; }
+        public System.Guid AuthorId { get; set; }
+        public System.DateTime CreateDate { get; set; }
+        public bool Active { get; set; }
     }
 }

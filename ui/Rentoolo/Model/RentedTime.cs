@@ -10,18 +10,13 @@
 namespace Rentoolo.Model
 {
     using System;
+    using System.Collections.Generic;
     
-    public partial class spGetComplaintsBySender_Result
+    public partial class RentedTime
     {
-        public int Id { get; set; }
-        public string Message { get; set; }
-        public int ComplaintType { get; set; }
-        public int ObjectId { get; set; }
-        public int ObjectType { get; set; }
-        public System.Guid UserSender { get; set; }
-        public System.Guid UserRecipier { get; set; }
-        public System.DateTime Data { get; set; }
-        public string UserSenderName { get; set; }
-        public string UserRecipierName { get; set; }
+        public System.Guid RentId { get; set; }
+        public System.DateTime TimeStart { get; set; }
+        public System.DateTime TimeEnd { get; set; }
+        public System.Guid UserId { get; set; }
     }
 }
